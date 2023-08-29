@@ -6,7 +6,7 @@ MONTH=`date +%Y-%d`
 DAY=`date +%Y-%m-%d`
 NOW="$(date +"%Y-%m-%d_%H-%M-%S")"
 # Variable Section -------------------------------------------
-DOMAIN_NAME=devopshobbies.com
+DOMAIN_NAME=ubuntu-playground.com
 HostName=$DOMAIN_NAME
 SSH_PORT=1242
 BAC_DIR=/opt/backup/files_$NOW
@@ -215,8 +215,8 @@ systemctl is-active --quiet sshd && echo -e "\e[1m \e[96m sshd service: \e[30;48
 
 #Copy Public Key -------------------------------------------
 #cat <<EOT >> /root/.ssh/authorized_keys
-# AmirBahador
-# ssh-rsa YOURSSH KEY
+# joe
+# 
 #EOT
 
 # fail2ban config -----------------------------------------
