@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx
+    # if u put container name, u can make multiple containers from it!
+    container_name: docker-nginx
+    restart: unless-stopped
+
+    ports:
+      - 80:80
+      - 443:443
